@@ -215,13 +215,13 @@ img {
       flex-direction: column;
   height: 568px;
   margin-bottom: 26px;
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 32%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header--index {
-    background-image: url("../../img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
     background-size: 575px auto;
   }
 }
@@ -296,7 +296,7 @@ img {
   display: block;
   width: 41px;
   height: 63px;
-  background-image: url("../../img/icon-interior.svg");
+  background-image: url("../img/icon-interior.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.5;
@@ -305,7 +305,7 @@ img {
   right: 28px;
   width: 60px;
   height: 60px;
-  background-image: url("../../img/icon-toy.svg");
+  background-image: url("../img/icon-toy.svg");
 }
 .page-header__option:hover .page-header__content::after {
   opacity: 0.7;
@@ -326,13 +326,13 @@ img {
     display: block;
     width: 100%;
     height: 14px;
-    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
   }
   .page-header--index {
     height: 834px;
     margin-bottom: 45px;
-    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 50% 100%;
   }
   .page-header__top {
@@ -383,7 +383,7 @@ img {
 (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
 (min-width: 768px) and (min-resolution: 1.5dppx) {
   .page-header--index {
-    background-image: url("../../img/hero-desktop@2x.jpg");
+    background-image: url("../img/hero-desktop@2x.jpg");
     background-size: 1150px auto;
   }
 }
@@ -476,7 +476,7 @@ img {
   height: 14px;
   border: none;
   background-color: #ffffff;
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -670,7 +670,7 @@ img {
   display: block;
   width: 86px;
   height: 35px;
-  background-image: url("../../img/logo-mobile.svg");
+  background-image: url("../img/logo-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
@@ -685,7 +685,7 @@ img {
   .page-logo {
     width: 113px;
     height: 46px;
-    background-image: url("../../img/logo-tablet.svg");
+    background-image: url("../img/logo-tablet.svg");
     background-position: center;
     margin-left: 0;
   }
@@ -694,7 +694,7 @@ img {
   .page-logo {
     width: 148px;
     height: 73px;
-    background-image: url("../../img/logo-desktop.svg");
+    background-image: url("../img/logo-desktop.svg");
   }
 }
 .order {
@@ -708,7 +708,7 @@ img {
   display: block;
   width: 100%;
   height: 10px;
-  background-image: url("../../img/bg-zigzag-line-mobile.svg");
+  background-image: url("../img/bg-zigzag-line-mobile.svg");
   background-repeat: repeat-x;
   transform: rotate(180deg);
 }
@@ -776,7 +776,7 @@ img {
 }
 @media (min-width: 768px) {
   .order::after {
-    background-image: url("../../img/bg-zigzag-line-tablet.svg");
+    background-image: url("../img/bg-zigzag-line-tablet.svg");
     height: 16px;
   }
   .order__wrapper {
@@ -841,7 +841,7 @@ img {
   .order::after {
     display: block;
     width: 100%;
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     height: 23px;
   }
@@ -936,7 +936,7 @@ img {
   display: block;
   width: 32px;
   height: 38px;
-  background-image: url("../../img/icon-feature-1.svg");
+  background-image: url("../img/icon-feature-1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -947,32 +947,32 @@ img {
 .info__item--4::before {
   width: 35px;
   height: 35px;
-  background-image: url("../../img/icon-feature-2.svg");
+  background-image: url("../img/icon-feature-2.svg");
 }
 .info__item--2::before {
   top: 7px;
   left: 0;
   width: 47px;
   height: 28px;
-  background-image: url("../../img/icon-feature-3.svg");
+  background-image: url("../img/icon-feature-3.svg");
 }
 .info__item--5::before {
   left: -7px;
   width: 55px;
   height: 24px;
-  background-image: url("../../img/icon-feature-4.svg");
+  background-image: url("../img/icon-feature-4.svg");
 }
 .info__item--3::before {
   left: 7px;
   width: 33px;
   height: 33px;
-  background-image: url("../../img/icon-feature-5.svg");
+  background-image: url("../img/icon-feature-5.svg");
 }
 .info__item--6::before {
   top: 8px;
   width: 33px;
   height: 33px;
-  background-image: url("../../img/icon-feature-6.svg");
+  background-image: url("../img/icon-feature-6.svg");
 }
 @media (min-width: 768px) {
   .info {
@@ -1115,7 +1115,7 @@ img {
     display: block;
     width: 350px;
     height: 457px;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-size: 350px auto;
   }
   .reviews__wrapper {
@@ -1162,7 +1162,7 @@ img {
 (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
 (min-width: 768px) and (min-resolution: 1.5dppx) {
   .reviews::before {
-    background-image: url("../../img/review@2x.jpg");
+    background-image: url("../img/review@2x.jpg");
   }
 }
 @media (min-width: 1150px) {
@@ -1206,19 +1206,19 @@ img {
   display: block;
   width: 100%;
   height: 10px;
-  background-image: url("../../img/bg-zigzag-line-mobile.svg");
+  background-image: url("../img/bg-zigzag-line-mobile.svg");
   background-repeat: repeat-x;
   transform: rotate(180deg);
 }
 @media (min-width: 768px) {
   .container--reviews::after {
-    background-image: url("../../img/bg-zigzag-line-tablet.svg");
+    background-image: url("../img/bg-zigzag-line-tablet.svg");
     height: 16px;
   }
 }
 @media (min-width: 1150px) {
   .container--reviews::after {
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     height: 23px;
   }
 }
@@ -1281,13 +1281,13 @@ img {
   height: 457px;
   width: 100%;
   background-color: #eeece5;
-  background-image: url("../../img/map-mobile@1x.jpg");
+  background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contacts__map {
-    background-image: url("../../img/map-mobile@2x.jpg");
+    background-image: url("../img/map-mobile@2x.jpg");
     background-size: cover;
   }
 }
@@ -1314,7 +1314,7 @@ img {
     height: 82px;
     top: -13px;
     right: 54px;
-    background-image: url("../../img/icon-flag.svg");
+    background-image: url("../img/icon-flag.svg");
   }
   .contacts__heading {
     margin-bottom: 50px;
@@ -1346,7 +1346,7 @@ img {
     line-height: 30px;
   }
   .contacts__map {
-    background-image: url("../../img/map-tablet@1x.jpg");
+    background-image: url("../img/map-tablet@1x.jpg");
     height: 457px;
   }
   .contacts__write {
@@ -1362,7 +1362,7 @@ img {
 (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
 (min-width: 768px) and (min-resolution: 1.5dppx) {
   .contacts__map {
-    background-image: url("../../img/map-tablet@2x.jpg");
+    background-image: url("../img/map-tablet@2x.jpg");
   }
 }
 @media (min-width: 1150px) {
@@ -1385,7 +1385,7 @@ img {
     height: 82px;
     top: -7px;
     left: 114px;
-    background-image: url("../../img/icon-flag.svg");
+    background-image: url("../img/icon-flag.svg");
   }
   .contacts__heading {
     font-size: 53px;
@@ -1401,7 +1401,7 @@ img {
   }
   .contacts__map {
     width: 525px;
-    background-image: url("../../img/map-desktop@1x.jpg");
+    background-image: url("../img/map-desktop@1x.jpg");
   }
   .contacts__write {
     width: 1150px;
@@ -1415,7 +1415,7 @@ img {
 }
 @media (min-width: 1150px) and (min-width: 1150px) {
   .contacts__map {
-    background-image: url("../../img/map-desktop@2x.jpg");
+    background-image: url("../img/map-desktop@2x.jpg");
   }
 }
 .page-footer {
@@ -1734,7 +1734,7 @@ img {
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url("../../img/icon-video.svg");
+  background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
