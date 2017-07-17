@@ -1905,6 +1905,7 @@ img {
   outline: none;
   font-size: 17px;
   line-height: 18px;
+  -webkit-appearance: none;
 }
 .form__input--name:hover,
 .form__input--name:focus {
@@ -2139,6 +2140,7 @@ img {
     background-color: inherit;
     font-size: 19px;
     line-height: 18px;
+    -webkit-appearance: none;
   }
   .form__input:checked ~ .form__label--radio::after {
     width: 21px;
