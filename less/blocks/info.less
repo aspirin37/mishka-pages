@@ -1,0 +1,133 @@
+.info {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-bottom: 57px;
+  box-sizing: border-box;
+}
+
+.info__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 25px;
+  line-height: 30px;
+  color: @black;
+}
+
+.info__item {
+  position: relative;
+  margin: 0;
+  padding-top: 60px;
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: @black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    display: block;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-feature-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--1::before {
+    top: 6px;
+    left: 8px;
+  }
+
+  &--4::before {
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-feature-2.svg");
+  }
+
+  &--2::before {
+    top: 7px;
+    left: 0;
+    width: 47px;
+    height: 28px;
+    background-image: url("../img/icon-feature-3.svg");
+  }
+
+  &--5::before {
+    left: -7px;
+    width: 55px;
+    height: 24px;
+    background-image: url("../img/icon-feature-4.svg");
+  }
+
+  &--3::before {
+    left: 7px;
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/icon-feature-5.svg");
+  }
+
+  &--6::before {
+    top: 8px;
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/icon-feature-6.svg");
+  }
+}
+
+@media @tablet-width {
+  .info {
+    width: 768px;
+    padding: 0 50px;
+    margin-bottom: 35px;
+  }
+
+  .info__heading {
+    margin-bottom: 42px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .info__wrapper {
+    display: flex;
+  }
+
+  .info__column {
+    width: 300px;
+
+    &--left {
+      margin-right: 34px;
+    }
+  }
+
+  .info__item {
+    margin-bottom: 51px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media @desktop-width {
+  .info {
+    width: 1050px;
+    padding-left: 175px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .info__heading {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .info__column {
+
+    &--left {
+      margin-right: 50px;
+    }
+  }
+}

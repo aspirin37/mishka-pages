@@ -1,0 +1,228 @@
+.page-header {
+  height: 256px;
+  background-color: #f9f9f9;
+  padding-top: 150px;
+  box-sizing: border-box;
+
+  &--index {
+    display: flex;
+    flex-direction: column;
+    height: 568px;
+    margin-bottom: 26px;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 32%;
+
+    @media @retina {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 575px auto;
+    }
+  }
+}
+
+.page-header__top {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: @white;
+}
+
+.page-header__heading {
+  width: 320px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: @black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-header__options {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.page-header__option {
+  height: 102px;
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: @white;
+  text-decoration: none;
+  background-color: @light-green;
+
+  &--toys {
+    height: 102px;
+    background-color: @dark-green;
+  }
+
+  &:hover {
+    height: 107px;
+    padding-bottom: 35px;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+}
+
+.page-header__content {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 130px;
+  box-sizing: border-box;
+  font-size: 19px;
+  line-height: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 36px;
+    display: block;
+    width: 41px;
+    height: 63px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+  }
+
+  &--toys::after {
+    right: 28px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+  }
+}
+
+.page-header__option:hover .page-header__content::after {
+  opacity: 0.7;
+}
+
+.page-header__option:active .page-header__content::after {
+  opacity: 0.3;
+}
+
+@media @tablet-width {
+  .page-header {
+    position: relative;
+    height: 314px;
+    padding-top: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 14px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+    }
+
+    &--index {
+      height: 834px;
+      margin-bottom: 45px;
+      background-image: url("../img/hero-desktop@1x.jpg");
+      background-position: 50% 100%;
+
+      @media @tablet-retina {
+        background-image: url("../img/hero-desktop@2x.jpg");
+        background-size: 1150px auto;
+      }
+    }
+  }
+
+  .page-header__top {
+    z-index: 0;
+    height: 89px;
+    background-color: @white;
+    box-shadow: 0 1px 0 0 @light-grey;
+  }
+
+  .page-header__heading {
+    width: 570px;
+    margin: 0 auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-header__options {
+    flex-direction: row;
+    width: 668px;
+    height: 125px;
+    margin: auto;
+    margin-bottom: 0;
+  }
+
+  .page-header__option {
+    margin-top: auto;
+    height: 120px;
+    padding-top: 28px;
+    width: 50%;
+
+    &:hover {
+      height: 125px;
+    }
+  }
+
+  .page-header__content {
+    width: auto;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 1px;
+    }
+
+    &--toys::after {
+      top: 4px;
+      right: 33px;
+    }
+  }
+}
+
+@media @desktop-width {
+  .page-header {
+    height: 345px;
+
+    &--index {
+      height: 834px;
+      margin-bottom: 63px;
+
+      @media @desktop-retina {
+        background-size: 1250px 90%;
+      }
+    }
+  }
+
+  .page-header__heading {
+    width: 700px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-header__options {
+    width: 1050px;
+  }
+
+  .page-header__content {
+
+  }
+}

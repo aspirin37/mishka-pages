@@ -1,0 +1,163 @@
+.video__container {
+  width: 260px;
+  padding-bottom: 34px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 1px @light-grey;
+}
+
+.video__picture {
+  position: relative;
+  display: block;
+  width: 260px;
+  cursor: pointer;
+
+  &:hover .video__svg {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active .video__svg {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.9;
+  }
+}
+
+.video__svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.video__wrapper {
+  padding: 0 33px;
+  padding-top: 28px;
+}
+
+.video__heading {
+  position: relative;
+  margin: 0;
+  padding: 0 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 89px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: @black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 33px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.video__text {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: @grey;
+}
+
+.video__btn {
+  border: none;
+  background-color: transparent;
+}
+
+@media @tablet-width {
+  .video__container {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    padding-bottom: 46px;
+  }
+
+  .video__picture {
+    width: 668px;
+    height: 455px;
+    order: -1;
+  }
+
+  .video__wrapper {
+    padding-top: 0;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .video__heading {
+    padding-top: 38px;
+    padding-left: 105px;
+    margin-bottom: 9px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: 32px;
+      left: 41px;
+    }
+  }
+
+  .video__text {
+    margin-bottom: 34px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media @desktop-width {
+  .video {
+    position: relative;
+    width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .video__container {
+    width: 367px;
+    height: 456px;
+    margin-right: 0;
+  }
+
+  .video__picture {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 683px;
+  }
+
+  .video__heading {
+    padding-top: 96px;
+    padding-left: 76px;
+    padding-right: 60px;
+
+    &::before {
+      top: 42px;
+      left: 79px;
+    }
+  }
+
+  .video__wrapper {
+    padding-left: 76px;
+    padding-right: 58px;
+  }
+
+  .video__text {
+    margin-bottom: 16px;
+  }
+}

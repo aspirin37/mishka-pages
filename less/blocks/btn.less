@@ -1,0 +1,30 @@
+.btn {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @grey;
+  text-align: center;
+  box-shadow: inset 0 0 0 2px @grey;
+  cursor: pointer;
+
+  &--contacts {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: @grey;
+    color: @white;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+}
+

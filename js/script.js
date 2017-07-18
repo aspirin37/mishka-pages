@@ -68,9 +68,12 @@ function initMap() {
 // popup
 
   var toggle = document.querySelector(".main-nav__burger");
-  var mobile = document.querySelector(".main-nav__item--mobile");
+  var mobile = document.querySelectorAll(".main-nav__item--mobile");
+
+  // mobile.classList.remove("main-nav--opened");
+  // header.classList.remove("top-header--opened");
 
   toggle.addEventListener("click", function(event) {
     event.preventDefault();
-    mobile.classList.toggle("main-nav__item--logo");
+    mobile.classList.toggle("main-nav__item--opened");
   });

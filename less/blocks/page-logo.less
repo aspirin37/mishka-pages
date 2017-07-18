@@ -1,0 +1,35 @@
+.page-logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+
+  &:not(.page-logo--active):hover {
+    opacity: 0.6;
+  }
+
+  &:not(.page-logo--active):active {
+    opacity: 0.3;
+  }
+}
+
+@media @tablet-width {
+  .page-logo {
+    width: 113px;
+    height: 46px;
+    background-image: url("../img/logo-tablet.svg");
+    background-position: center;
+    margin-left: 0;
+  }
+}
+
+@media @desktop-width {
+  .page-logo {
+    width: 148px;
+    height: 73px;
+    background-image: url("../img/logo-desktop.svg");
+  }
+}

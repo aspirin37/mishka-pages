@@ -1,0 +1,294 @@
+.main-nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: @white;
+}
+
+.main-nav__item {
+    display: none;
+
+    &--logo {
+      display: block;
+    }
+
+    &--opened {
+      display: block;
+    }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 0 30px;
+  padding-top: 25px;
+  padding-bottom: 28px;
+  box-shadow: 0 1px 0 0 @light-grey;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @black;
+  text-align: center;
+  text-decoration: none;
+
+  &:not(.main-nav__link--active):hover {
+    color: fade(@black, 60%)
+  }
+
+  &:not(.main-nav__link--active):hover .main-nav__svg {
+    fill: @light-green;
+  }
+
+  &:not(.main-nav__link--active):active {
+    color: fade(@black, 30%)
+  }
+
+  &:not(.main-nav__link--active):active .main-nav__svg {
+    fill: fade(@light-green, 30%);
+  }
+
+  &--logo {
+    padding-top: 21px;
+    padding-bottom: 22px;
+  }
+}
+
+.main-nav__wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.main-nav__burger {
+  position: absolute;
+  right: 2px;
+  top: 11px;
+  display: block;
+  width: 20px;
+  height: 14px;
+  border: none;
+  background-color: @white;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-nav__delivery {
+  display: none;
+}
+
+.main-nav__svg-wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.main-nav__svg {
+  fill: #d3d2d2;
+  position: absolute;
+  left: 0;
+  top: 6px;
+
+  &--cart {
+    top: 2px;
+  }
+}
+
+@media @tablet-width {
+  .main-nav {
+    position: relative;
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    &--index {
+      margin-bottom: 110px;
+    }
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
+
+  .main-nav__item {
+    display: block;
+    box-shadow: none;
+
+    &--catalog,
+    &--order,
+    &--stock,
+    &--sale {
+      padding-top: 18px;
+      margin-right: 36px
+    }
+
+    &--order {
+      order: 5;
+      padding-top: 18px;
+    }
+
+    &--logo {
+      order: 1;
+      width: 320px;
+      box-shadow: 0 1px 0 0px @light-grey;
+    }
+
+    &--catalog {
+      order: 4;
+    }
+
+    &--navigation {
+      order: 2;
+      box-shadow:
+        inset 1px 0 0 0px @light-grey,
+        inset -1px 0 0 0px @light-grey,
+        0 1px 0 0px @light-grey;
+    }
+
+    &--cart {
+      flex-grow: 1;
+      order: 3;
+      box-shadow: 0 1px 0 0px @light-grey;
+    }
+
+    &--stock {
+      order: 6;
+      display: none;
+    }
+
+    &--sale {
+      order: 7;
+      display: none;
+    }
+
+    &--delivery {
+      order: 8;
+      padding-top: 18px;
+      margin-left: auto;
+    }
+  }
+
+  .main-nav__delivery {
+    order: 8;
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .main-nav__link {
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    &--logo {
+      padding-left: 0;
+      padding-right: 0;
+      box-shadow: 0 1px 0 0 @light-grey;
+    }
+
+    &--navigation {
+      font-size: 0;
+      width: 84px;
+      box-sizing: border-box;
+    }
+
+    &--cart {
+      padding-top: 30px;
+      padding-right: 0;
+      text-align: right;
+    }
+
+    &--catalog,
+    &--order,
+    &--stock,
+    &--sale {
+      padding: 0;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+  .main-nav__burger {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    width: auto;
+  }
+
+  .main-nav__svg-wrapper {
+    width: auto;
+  }
+
+  .main-nav__svg {
+    left: 31px;
+    top: 12px;
+
+    &--cart {
+      top: 5px;
+    }
+  }
+}
+
+@media @desktop-width {
+  .main-nav {
+    width: 1050px;
+  }
+
+  .main-nav__item {
+
+    &--logo {
+      width: auto;
+      margin-right: 101px;
+    }
+
+    &--catalog {
+      order: -2;
+      padding-top: 30px;
+      padding-right: 37px;
+      margin-right: 34px;
+      box-shadow: 0 1px 0 0 @light-grey;
+    }
+
+    &--order {
+      order: -1;
+      padding-top: 30px;
+      margin-right: 77px;
+    }
+
+    &--sale,
+    &--stock {
+      display: block;
+    }
+
+    &--stock {
+      margin-right: 62px;
+    }
+  }
+
+  .main-nav__link {
+    box-shadow: none;
+
+    &--logo {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    &--catalog,
+    &--order {
+      font-size: 17px;
+    }
+  }
+}

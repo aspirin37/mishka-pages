@@ -1,0 +1,35 @@
+.social {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-left: 56px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+}
+
+.social__link {
+  display: block;
+  margin-right: 42px;
+
+  &:hover .social__svg {
+    fill: @hover;
+  }
+
+  &:active .social__svg {
+    opacity: 0.3;
+  }
+}
+
+@media @tablet-width {
+  .social {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(63px);
+    padding: 0;
+    box-shadow: none;
+  }
+}
