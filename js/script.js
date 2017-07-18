@@ -70,9 +70,10 @@ function initMap() {
   var toggle = document.querySelector(".main-nav__burger");
   var mobile = document.querySelectorAll(".main-nav__item--mobile");
 
+  // mobile.classList.remove("main-nav--opened");
+  // header.classList.remove("top-header--opened");
+
   toggle.addEventListener("click", function(event) {
-  event.preventDefault();
-  for(var i = 0; i < mobile.length; i++) {
-    mobile[i].classList.toggle("main-nav__item--opened");
-  }
-});
+    event.preventDefault();
+    mobile.classList.toggle("main-nav__item--opened");
+  });
