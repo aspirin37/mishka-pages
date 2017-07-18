@@ -74,6 +74,8 @@ function initMap() {
   // header.classList.remove("top-header--opened");
 
   toggle.addEventListener("click", function(event) {
-    event.preventDefault();
-    mobile.classList.toggle("main-nav__item--opened");
-  });
+  event.preventDefault();
+  for(var i = 0; i < mobile.length; i++) {
+    mobile[i].classList.toggle("main-nav__item--opened");
+  }
+});
